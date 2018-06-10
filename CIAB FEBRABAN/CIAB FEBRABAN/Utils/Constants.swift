@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - Properties
 
-let URL_API = "https://gyro.azurewebsites.net/servico/investimento"
+let URL_API = "https://gyro.azurewebsites.net/servico/investidor"
 
 let URL_HISTORICO_INVESTIMENTOS = "https://gyro.azurewebsites.net/servico/historico"
 

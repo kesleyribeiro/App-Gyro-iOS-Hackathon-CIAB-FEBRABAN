@@ -7,5 +7,6 @@ target 'CIAB FEBRABAN' do
   pod 'Alamofire'
   pod 'SwiftMessages'
   pod 'YBAlertController'
+  pod 'PasswordTextField'
 
 end

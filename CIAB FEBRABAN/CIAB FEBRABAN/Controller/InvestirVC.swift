@@ -13,6 +13,9 @@ class InvestirVC: UIViewController {
     // MARK: - IBOutlet
     @IBOutlet var menuBtn: UIBarButtonItem!
 
+    
+    // MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
      

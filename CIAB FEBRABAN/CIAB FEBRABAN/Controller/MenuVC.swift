@@ -11,6 +11,9 @@ import YBAlertController
 
 class MenuVC: UITableViewController {
     
+    
+    // MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +30,7 @@ class MenuVC: UITableViewController {
         
         // Adiciona o botão 'SIM'
         alerta.addButton("SIM", action: {
-            
+            self.performSegue(withIdentifier: "paraHomeVC", sender: nil)
         })
 
         // touch outside the alert to dismiss

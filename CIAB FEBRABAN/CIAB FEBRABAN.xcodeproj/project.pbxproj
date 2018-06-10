@@ -25,6 +25,8 @@
 		FAD1D3B920CD211900DBD893 /* Historico.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3B820CD211900DBD893 /* Historico.swift */; };
 		FAD1D3BB20CD285E00DBD893 /* HistoricoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3BA20CD285E00DBD893 /* HistoricoCell.swift */; };
 		FAD1D3BD20CD294A00DBD893 /* HistoricoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3BC20CD294A00DBD893 /* HistoricoVC.swift */; };
+		FAD1D3BF20CD53A100DBD893 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3BE20CD53A100DBD893 /* LoginVC.swift */; };
+		FAD1D3C120CD589300DBD893 /* FazerInvestimentoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3C020CD589300DBD893 /* FazerInvestimentoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		FAD1D3B820CD211900DBD893 /* Historico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Historico.swift; sourceTree = "<group>"; };
 		FAD1D3BA20CD285E00DBD893 /* HistoricoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoCell.swift; sourceTree = "<group>"; };
 		FAD1D3BC20CD294A00DBD893 /* HistoricoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoVC.swift; sourceTree = "<group>"; };
+		FAD1D3BE20CD53A100DBD893 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		FAD1D3C020CD589300DBD893 /* FazerInvestimentoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FazerInvestimentoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 				FAD1D3B420CCE07700DBD893 /* InvestirVC.swift */,
 				FAD1D3B620CCEFAE00DBD893 /* CadastrarVC.swift */,
 				FAD1D3BC20CD294A00DBD893 /* HistoricoVC.swift */,
+				FAD1D3BE20CD53A100DBD893 /* LoginVC.swift */,
+				FAD1D3C020CD589300DBD893 /* FazerInvestimentoVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -238,12 +244,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CIAB FEBRABAN/Pods-CIAB FEBRABAN-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PasswordTextField/PasswordTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
 				"${BUILT_PRODUCTS_DIR}/YBAlertController/YBAlertController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PasswordTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBAlertController.framework",
 			);
@@ -287,10 +295,12 @@
 				FAD1D3B920CD211900DBD893 /* Historico.swift in Sources */,
 				FA44E6C020CCB80F0023F89D /* AppDelegate.swift in Sources */,
 				FAD1D3B320CCDFD400DBD893 /* MenuVC.swift in Sources */,
+				FAD1D3C120CD589300DBD893 /* FazerInvestimentoVC.swift in Sources */,
 				FAD1D3A120CCC49300DBD893 /* Alerts.swift in Sources */,
 				FAD1D3BD20CD294A00DBD893 /* HistoricoVC.swift in Sources */,
 				FAD1D3AB20CCCD5B00DBD893 /* Investimento.swift in Sources */,
 				FA44E6C820CCB8100023F89D /* CIAB_FEBRABAN.xcdatamodeld in Sources */,
+				FAD1D3BF20CD53A100DBD893 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
