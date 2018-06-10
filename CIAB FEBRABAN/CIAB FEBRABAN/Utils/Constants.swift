@@ -12,4 +12,7 @@ import Foundation
 
 let URL_API = "https://gyro.azurewebsites.net/servico/investimento"
 
-let URL_HISTORICO_INVESTIMENTOS = "https://gyro.azurewebsites.net/servico/emprestimo"
+let URL_HISTORICO_INVESTIMENTOS = "https://gyro.azurewebsites.net/servico/historico"
+
+// Sombra da view customizada
+let SHADOW_GRAY: CGFloat = 90/255

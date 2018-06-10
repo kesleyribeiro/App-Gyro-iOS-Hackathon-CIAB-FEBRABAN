@@ -5,7 +5,6 @@ target 'CIAB FEBRABAN' do
   use_frameworks!
   
   pod 'Alamofire'
-  pod 'AlamofireImage'
   pod 'SwiftMessages'
   pod 'YBAlertController'
 

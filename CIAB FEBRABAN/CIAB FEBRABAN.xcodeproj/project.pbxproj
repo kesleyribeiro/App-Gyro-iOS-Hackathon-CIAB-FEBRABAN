@@ -22,6 +22,9 @@
 		FAD1D3B320CCDFD400DBD893 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3B220CCDFD400DBD893 /* MenuVC.swift */; };
 		FAD1D3B520CCE07700DBD893 /* InvestirVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3B420CCE07700DBD893 /* InvestirVC.swift */; };
 		FAD1D3B720CCEFAE00DBD893 /* CadastrarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3B620CCEFAE00DBD893 /* CadastrarVC.swift */; };
+		FAD1D3B920CD211900DBD893 /* Historico.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3B820CD211900DBD893 /* Historico.swift */; };
+		FAD1D3BB20CD285E00DBD893 /* HistoricoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3BA20CD285E00DBD893 /* HistoricoCell.swift */; };
+		FAD1D3BD20CD294A00DBD893 /* HistoricoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3BC20CD294A00DBD893 /* HistoricoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		FAD1D3B220CCDFD400DBD893 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		FAD1D3B420CCE07700DBD893 /* InvestirVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestirVC.swift; sourceTree = "<group>"; };
 		FAD1D3B620CCEFAE00DBD893 /* CadastrarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarVC.swift; sourceTree = "<group>"; };
+		FAD1D3B820CD211900DBD893 /* Historico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Historico.swift; sourceTree = "<group>"; };
+		FAD1D3BA20CD285E00DBD893 /* HistoricoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoCell.swift; sourceTree = "<group>"; };
+		FAD1D3BC20CD294A00DBD893 /* HistoricoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 			children = (
 				FA44E6CB20CCB8120023F89D /* LaunchScreen.storyboard */,
 				FA44E6C320CCB8100023F89D /* Main.storyboard */,
+				FAD1D3BA20CD285E00DBD893 /* HistoricoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD1D3AA20CCCD5B00DBD893 /* Investimento.swift */,
+				FAD1D3B820CD211900DBD893 /* Historico.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +146,7 @@
 				FAD1D3B220CCDFD400DBD893 /* MenuVC.swift */,
 				FAD1D3B420CCE07700DBD893 /* InvestirVC.swift */,
 				FAD1D3B620CCEFAE00DBD893 /* CadastrarVC.swift */,
+				FAD1D3BC20CD294A00DBD893 /* HistoricoVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -229,14 +238,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CIAB FEBRABAN/Pods-CIAB FEBRABAN-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
 				"${BUILT_PRODUCTS_DIR}/YBAlertController/YBAlertController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBAlertController.framework",
 			);
@@ -274,11 +281,14 @@
 				FAD1D3AD20CCDA0800DBD893 /* MyButton.swift in Sources */,
 				FAD1D3B720CCEFAE00DBD893 /* CadastrarVC.swift in Sources */,
 				FAD1D3B520CCE07700DBD893 /* InvestirVC.swift in Sources */,
+				FAD1D3BB20CD285E00DBD893 /* HistoricoCell.swift in Sources */,
 				FA44E6C220CCB8100023F89D /* HomeVC.swift in Sources */,
 				FAD1D3B120CCDBDE00DBD893 /* SWRevealViewController.m in Sources */,
+				FAD1D3B920CD211900DBD893 /* Historico.swift in Sources */,
 				FA44E6C020CCB80F0023F89D /* AppDelegate.swift in Sources */,
 				FAD1D3B320CCDFD400DBD893 /* MenuVC.swift in Sources */,
 				FAD1D3A120CCC49300DBD893 /* Alerts.swift in Sources */,
+				FAD1D3BD20CD294A00DBD893 /* HistoricoVC.swift in Sources */,
 				FAD1D3AB20CCCD5B00DBD893 /* Investimento.swift in Sources */,
 				FA44E6C820CCB8100023F89D /* CIAB_FEBRABAN.xcdatamodeld in Sources */,
 			);

@@ -563,7 +563,7 @@
         <!--Histórico-->
         <scene sceneID="wbI-4x-pD2">
             <objects>
-                <viewController title="Investir" id="hu7-1t-LbM" userLabel="Histórico" customClass="InvestirVC" customModule="CIAB_FEBRABAN" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Investir" id="hu7-1t-LbM" userLabel="Histórico" customClass="HistoricoVC" customModule="CIAB_FEBRABAN" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8NJ-0j-j31"/>
                         <viewControllerLayoutGuide type="bottom" id="NgA-UE-RZF"/>
@@ -572,17 +572,149 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L1y-Ac-vUv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sem resultados. Tente mais tarde!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzu-ob-bdT">
+                                <rect key="frame" x="23" y="241" width="273" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="210" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="L1y-Ac-vUv">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.11417061840000001" green="0.72361844779999995" blue="0.77815568449999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QG0-0S-hg9">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoricoCell" id="QG0-0S-hg9" customClass="HistoricoCell" customModule="CIAB_FEBRABAN" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="320" height="210"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QG0-0S-hg9" id="uI2-xB-6EZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="209.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="3CM-XI-d2r" userLabel="Bkg View">
+                                                    <rect key="frame" x="5" y="5" width="310" height="199.5"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eAS-aE-0Uq">
+                                                            <rect key="frame" x="5" y="8" width="193.5" height="182.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor do empréstimo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVr-Ql-PgM">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="153.5" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prazo do empréstimo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o49-I9-NS3">
+                                                                    <rect key="frame" x="0.0" y="27.5" width="158" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total do empréstimo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6R-rv-eqs">
+                                                                    <rect key="frame" x="0.0" y="55" width="151.5" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taxa de juros:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aq6-NC-YHK">
+                                                                    <rect key="frame" x="0.0" y="82.5" width="101" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data do 1º pagamento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8r-dE-TaC">
+                                                                    <rect key="frame" x="0.0" y="110" width="162.5" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data do último pagamento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPc-lb-fQA">
+                                                                    <rect key="frame" x="0.0" y="137.5" width="193.5" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUv-zY-8ds">
+                                                                    <rect key="frame" x="0.0" y="165" width="51" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w6E-N9-BGb">
+                                                            <rect key="frame" x="209" y="8" width="80.5" height="182.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHP-14-Ogj">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="38" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="15"/>
+                                                                    <color key="textColor" red="0.11417061840000001" green="0.72361844779999995" blue="0.77815568449999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02/10/2018" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxg-BY-0Rf">
+                                                                    <rect key="frame" x="0.0" y="27.5" width="75.5" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="15"/>
+                                                                    <color key="textColor" red="0.11417061840000001" green="0.72361844779999995" blue="0.77815568449999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyi-Mo-2ed">
+                                                                    <rect key="frame" x="0.0" y="55" width="38" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="15"/>
+                                                                    <color key="textColor" red="0.11417061840000001" green="0.72361844779999995" blue="0.77815568449999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pF0-8U-Xpt">
+                                                                    <rect key="frame" x="0.0" y="82.5" width="30.5" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="15"/>
+                                                                    <color key="textColor" red="0.11417061840000001" green="0.72361844779999995" blue="0.77815568449999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/08/2018]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ez-fI-k5g">
+                                                                    <rect key="frame" x="0.0" y="110" width="80.5" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="15"/>
+                                                                    <color key="textColor" red="0.11417061840000001" green="0.72361844779999995" blue="0.77815568449999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02/10/2018" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdj-cd-7jq">
+                                                                    <rect key="frame" x="0.0" y="137.5" width="75.5" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="15"/>
+                                                                    <color key="textColor" red="0.11417061840000001" green="0.72361844779999995" blue="0.77815568449999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmS-XW-r1G">
+                                                                    <rect key="frame" x="0.0" y="165" width="51" height="17.5"/>
+                                                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                                                    <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="eAS-aE-0Uq" firstAttribute="top" secondItem="3CM-XI-d2r" secondAttribute="top" constant="8" id="IrX-N7-nYc"/>
+                                                        <constraint firstItem="eAS-aE-0Uq" firstAttribute="leading" secondItem="3CM-XI-d2r" secondAttribute="leading" constant="5" id="MyI-MJ-e3k"/>
+                                                        <constraint firstItem="w6E-N9-BGb" firstAttribute="top" secondItem="eAS-aE-0Uq" secondAttribute="top" id="pzp-kh-vSc"/>
+                                                        <constraint firstItem="w6E-N9-BGb" firstAttribute="leading" secondItem="eAS-aE-0Uq" secondAttribute="trailing" constant="10" id="x1Q-0R-Vqq"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3CM-XI-d2r" firstAttribute="top" secondItem="uI2-xB-6EZ" secondAttribute="top" constant="5" id="Dz5-FO-NPj"/>
+                                                <constraint firstAttribute="trailing" secondItem="3CM-XI-d2r" secondAttribute="trailing" constant="5" id="O3f-h5-eF8"/>
+                                                <constraint firstAttribute="bottom" secondItem="3CM-XI-d2r" secondAttribute="bottom" constant="5" id="VwQ-mg-coW"/>
+                                                <constraint firstItem="3CM-XI-d2r" firstAttribute="leading" secondItem="uI2-xB-6EZ" secondAttribute="leading" constant="5" id="jkk-Wq-jmR"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="bkgView" destination="3CM-XI-d2r" id="WKu-Nj-lC3"/>
+                                            <outlet property="data1PagamentoLabel" destination="6ez-fI-k5g" id="oUI-Zc-XPL"/>
+                                            <outlet property="dataUltimoPagamentoLabel" destination="Xdj-cd-7jq" id="h6i-tB-T8d"/>
+                                            <outlet property="prazoDoEmprestimoLabel" destination="qxg-BY-0Rf" id="3Q8-PU-pUc"/>
+                                            <outlet property="statusLabel" destination="jmS-XW-r1G" id="83b-EH-dbS"/>
+                                            <outlet property="taxaDeJurosLabel" destination="pF0-8U-Xpt" id="i0L-bJ-HOc"/>
+                                            <outlet property="totalDoEmprestimoLabel" destination="lyi-Mo-2ed" id="9GB-1M-Djg"/>
+                                            <outlet property="valorDoEmprestimoLabel" destination="KHP-14-Ogj" id="9KJ-qO-Azc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -596,7 +728,9 @@
                             <constraint firstItem="L1y-Ac-vUv" firstAttribute="leading" secondItem="Uld-z2-RGp" secondAttribute="leading" id="03j-ye-1Jl"/>
                             <constraint firstItem="Uld-z2-RGp" firstAttribute="trailing" secondItem="L1y-Ac-vUv" secondAttribute="trailing" id="1BP-hc-wW0"/>
                             <constraint firstItem="NgA-UE-RZF" firstAttribute="top" secondItem="L1y-Ac-vUv" secondAttribute="bottom" id="NQq-5T-SwO"/>
+                            <constraint firstItem="bzu-ob-bdT" firstAttribute="centerY" secondItem="Uld-z2-RGp" secondAttribute="centerY" id="QMV-Qa-B8s"/>
                             <constraint firstItem="L1y-Ac-vUv" firstAttribute="top" secondItem="8NJ-0j-j31" secondAttribute="bottom" id="ZWM-xn-b9j"/>
+                            <constraint firstItem="bzu-ob-bdT" firstAttribute="centerX" secondItem="Uld-z2-RGp" secondAttribute="centerX" id="dtE-Lv-Va3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uld-z2-RGp"/>
                     </view>
@@ -607,12 +741,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="historicoTableView" destination="L1y-Ac-vUv" id="vpi-V7-pZB"/>
                         <outlet property="menuBtn" destination="F6a-wG-n7J" id="Tb4-Pe-R8g"/>
+                        <outlet property="semResultadosLabel" destination="bzu-ob-bdT" id="9WJ-z8-RuN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rw8-ve-OUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4183" y="739"/>
+            <point key="canvasLocation" x="4181.25" y="738.38028169014081"/>
         </scene>
     </scenes>
     <resources>
