@@ -11,6 +11,11 @@ import Alamofire
 
 class FazerInvestimentoVC: UIViewController {
 
+    // MARK: - IBOutlets
+    @IBOutlet weak var quantoInvestirLabel: UITextField!
+    @IBOutlet weak var porcentagemLucroLabel: UITextField!
+    @IBOutlet weak var periodoRetornoLabel: UITextField!
+    
     
     // MARK: - Properties
     
@@ -24,7 +29,8 @@ class FazerInvestimentoVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        getInfos()
+        //getInfos()
+        setupTextFields()
     }
 
     
@@ -52,15 +58,38 @@ class FazerInvestimentoVC: UIViewController {
         }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    // MARK:- IBAction
+    
+    @IBAction func investirBtn(_ sender: Any) {
+    
+        let quanto = quantoInvestirLabel.text!
+        let porcentagem = porcentagemLucroLabel.text!
+        let periodo = periodoRetornoLabel.text!
+        
+        // Se dados não informados
+        if quanto.isEmpty || porcentagem.isEmpty || periodo.isEmpty {
+            self.showAlerts.exibirAlertaPersonalizado("Por favor, informe todos os dados corretamente!", tipoAlerta: 1)
+            return
+        } else {
+            
+            self.showAlerts.exibirAlertaPersonalizado("Investimento realizado com sucesso!", tipoAlerta: 3)
+            
+            setupTextFields()                        
+        }
     }
-    */
+    
+    // MARK: - Funcions
+    
+    func setupTextFields() {
+        quantoInvestirLabel.text = ""
+        porcentagemLucroLabel.text = ""
+        periodoRetornoLabel.text = ""
+    }
+
+    // Função para esconder o teclado quando o usuário tocar na tela
+    override func touchesBegan(_ touches: Set<UITouch>, with withEvent: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
 }
