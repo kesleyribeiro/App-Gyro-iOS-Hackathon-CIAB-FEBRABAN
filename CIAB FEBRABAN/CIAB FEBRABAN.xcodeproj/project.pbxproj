@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D733933CD498818DA560A7BC /* Pods_CIAB_FEBRABAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F757DB2743396A300DD35682 /* Pods_CIAB_FEBRABAN.framework */; };
+		FA44E6C020CCB80F0023F89D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44E6BF20CCB80F0023F89D /* AppDelegate.swift */; };
+		FA44E6C220CCB8100023F89D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA44E6C120CCB8100023F89D /* HomeVC.swift */; };
+		FA44E6C520CCB8100023F89D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA44E6C320CCB8100023F89D /* Main.storyboard */; };
+		FA44E6C820CCB8100023F89D /* CIAB_FEBRABAN.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA44E6C620CCB8100023F89D /* CIAB_FEBRABAN.xcdatamodeld */; };
+		FA44E6CA20CCB8120023F89D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA44E6C920CCB8120023F89D /* Assets.xcassets */; };
+		FA44E6CD20CCB8120023F89D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA44E6CB20CCB8120023F89D /* LaunchScreen.storyboard */; };
+		FAD1D3A120CCC49300DBD893 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3A020CCC49300DBD893 /* Alerts.swift */; };
+		FAD1D3A920CCCC2F00DBD893 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3A820CCCC2F00DBD893 /* Constants.swift */; };
+		FAD1D3AB20CCCD5B00DBD893 /* Investimento.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3AA20CCCD5B00DBD893 /* Investimento.swift */; };
+		FAD1D3AD20CCDA0800DBD893 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3AC20CCDA0800DBD893 /* MyButton.swift */; };
+		FAD1D3B120CCDBDE00DBD893 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3B020CCDBDE00DBD893 /* SWRevealViewController.m */; };
+		FAD1D3B320CCDFD400DBD893 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3B220CCDFD400DBD893 /* MenuVC.swift */; };
+		FAD1D3B520CCE07700DBD893 /* InvestirVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3B420CCE07700DBD893 /* InvestirVC.swift */; };
+		FAD1D3B720CCEFAE00DBD893 /* CadastrarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D3B620CCEFAE00DBD893 /* CadastrarVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7BF9D773EC9EFB7D71412C07 /* Pods-CIAB FEBRABAN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CIAB FEBRABAN.release.xcconfig"; path = "Pods/Target Support Files/Pods-CIAB FEBRABAN/Pods-CIAB FEBRABAN.release.xcconfig"; sourceTree = "<group>"; };
+		C23C090C55ABDD4AD818C8B6 /* Pods-CIAB FEBRABAN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CIAB FEBRABAN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CIAB FEBRABAN/Pods-CIAB FEBRABAN.debug.xcconfig"; sourceTree = "<group>"; };
+		F757DB2743396A300DD35682 /* Pods_CIAB_FEBRABAN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CIAB_FEBRABAN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA44E6BC20CCB80F0023F89D /* CIAB FEBRABAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CIAB FEBRABAN.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA44E6BF20CCB80F0023F89D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA44E6C120CCB8100023F89D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FA44E6C420CCB8100023F89D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA44E6C720CCB8100023F89D /* CIAB_FEBRABAN.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CIAB_FEBRABAN.xcdatamodel; sourceTree = "<group>"; };
+		FA44E6C920CCB8120023F89D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA44E6CC20CCB8120023F89D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA44E6CE20CCB8120023F89D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD1D3A020CCC49300DBD893 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		FAD1D3A820CCCC2F00DBD893 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FAD1D3AA20CCCD5B00DBD893 /* Investimento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investimento.swift; sourceTree = "<group>"; };
+		FAD1D3AC20CCDA0800DBD893 /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		FAD1D3AE20CCDBDD00DBD893 /* CIAB FEBRABAN-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CIAB FEBRABAN-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAD1D3AF20CCDBDD00DBD893 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		FAD1D3B020CCDBDE00DBD893 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		FAD1D3B220CCDFD400DBD893 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		FAD1D3B420CCE07700DBD893 /* InvestirVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestirVC.swift; sourceTree = "<group>"; };
+		FAD1D3B620CCEFAE00DBD893 /* CadastrarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA44E6B920CCB80F0023F89D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D733933CD498818DA560A7BC /* Pods_CIAB_FEBRABAN.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43AF6BFE5C66A77C3678A769 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F757DB2743396A300DD35682 /* Pods_CIAB_FEBRABAN.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA44E6B320CCB80F0023F89D = {
+			isa = PBXGroup;
+			children = (
+				FA44E6BE20CCB80F0023F89D /* CIAB FEBRABAN */,
+				FA44E6BD20CCB80F0023F89D /* Products */,
+				FB11D11F704A1BC9281094D8 /* Pods */,
+				43AF6BFE5C66A77C3678A769 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA44E6BD20CCB80F0023F89D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA44E6BC20CCB80F0023F89D /* CIAB FEBRABAN.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA44E6BE20CCB80F0023F89D /* CIAB FEBRABAN */ = {
+			isa = PBXGroup;
+			children = (
+				FA44E6BF20CCB80F0023F89D /* AppDelegate.swift */,
+				FAD1D3A220CCC83500DBD893 /* Utils */,
+				FAD1D3A620CCC85100DBD893 /* Controller */,
+				FAD1D3A520CCC84C00DBD893 /* Model */,
+				FAD1D3A420CCC84600DBD893 /* View */,
+				FA44E6C920CCB8120023F89D /* Assets.xcassets */,
+				FA44E6CE20CCB8120023F89D /* Info.plist */,
+				FA44E6C620CCB8100023F89D /* CIAB_FEBRABAN.xcdatamodeld */,
+			);
+			path = "CIAB FEBRABAN";
+			sourceTree = "<group>";
+		};
+		FAD1D3A220CCC83500DBD893 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1D3A820CCCC2F00DBD893 /* Constants.swift */,
+				FAD1D3A020CCC49300DBD893 /* Alerts.swift */,
+				FAD1D3AC20CCDA0800DBD893 /* MyButton.swift */,
+				FAD1D3AF20CCDBDD00DBD893 /* SWRevealViewController.h */,
+				FAD1D3B020CCDBDE00DBD893 /* SWRevealViewController.m */,
+				FAD1D3AE20CCDBDD00DBD893 /* CIAB FEBRABAN-Bridging-Header.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FAD1D3A420CCC84600DBD893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA44E6CB20CCB8120023F89D /* LaunchScreen.storyboard */,
+				FA44E6C320CCB8100023F89D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAD1D3A520CCC84C00DBD893 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAD1D3AA20CCCD5B00DBD893 /* Investimento.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAD1D3A620CCC85100DBD893 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA44E6C120CCB8100023F89D /* HomeVC.swift */,
+				FAD1D3B220CCDFD400DBD893 /* MenuVC.swift */,
+				FAD1D3B420CCE07700DBD893 /* InvestirVC.swift */,
+				FAD1D3B620CCEFAE00DBD893 /* CadastrarVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FB11D11F704A1BC9281094D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C23C090C55ABDD4AD818C8B6 /* Pods-CIAB FEBRABAN.debug.xcconfig */,
+				7BF9D773EC9EFB7D71412C07 /* Pods-CIAB FEBRABAN.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA44E6BB20CCB80F0023F89D /* CIAB FEBRABAN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA44E6D120CCB8120023F89D /* Build configuration list for PBXNativeTarget "CIAB FEBRABAN" */;
+			buildPhases = (
+				DD83AD6188EAA574A9BE7198 /* [CP] Check Pods Manifest.lock */,
+				FA44E6B820CCB80F0023F89D /* Sources */,
+				FA44E6B920CCB80F0023F89D /* Frameworks */,
+				FA44E6BA20CCB80F0023F89D /* Resources */,
+				822A8C0F1F20D9A0C1EBC733 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CIAB FEBRABAN";
+			productName = "CIAB FEBRABAN";
+			productReference = FA44E6BC20CCB80F0023F89D /* CIAB FEBRABAN.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA44E6B420CCB80F0023F89D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Kesley Ribeiro";
+				TargetAttributes = {
+					FA44E6BB20CCB80F0023F89D = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = FA44E6B720CCB80F0023F89D /* Build configuration list for PBXProject "CIAB FEBRABAN" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA44E6B320CCB80F0023F89D;
+			productRefGroup = FA44E6BD20CCB80F0023F89D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA44E6BB20CCB80F0023F89D /* CIAB FEBRABAN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA44E6BA20CCB80F0023F89D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA44E6CD20CCB8120023F89D /* LaunchScreen.storyboard in Resources */,
+				FA44E6CA20CCB8120023F89D /* Assets.xcassets in Resources */,
+				FA44E6C520CCB8100023F89D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		822A8C0F1F20D9A0C1EBC733 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CIAB FEBRABAN/Pods-CIAB FEBRABAN-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/YBAlertController/YBAlertController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBAlertController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CIAB FEBRABAN/Pods-CIAB FEBRABAN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD83AD6188EAA574A9BE7198 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CIAB FEBRABAN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA44E6B820CCB80F0023F89D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD1D3A920CCCC2F00DBD893 /* Constants.swift in Sources */,
+				FAD1D3AD20CCDA0800DBD893 /* MyButton.swift in Sources */,
+				FAD1D3B720CCEFAE00DBD893 /* CadastrarVC.swift in Sources */,
+				FAD1D3B520CCE07700DBD893 /* InvestirVC.swift in Sources */,
+				FA44E6C220CCB8100023F89D /* HomeVC.swift in Sources */,
+				FAD1D3B120CCDBDE00DBD893 /* SWRevealViewController.m in Sources */,
+				FA44E6C020CCB80F0023F89D /* AppDelegate.swift in Sources */,
+				FAD1D3B320CCDFD400DBD893 /* MenuVC.swift in Sources */,
+				FAD1D3A120CCC49300DBD893 /* Alerts.swift in Sources */,
+				FAD1D3AB20CCCD5B00DBD893 /* Investimento.swift in Sources */,
+				FA44E6C820CCB8100023F89D /* CIAB_FEBRABAN.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA44E6C320CCB8100023F89D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA44E6C420CCB8100023F89D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA44E6CB20CCB8120023F89D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA44E6CC20CCB8120023F89D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA44E6CF20CCB8120023F89D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA44E6D020CCB8120023F89D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA44E6D220CCB8120023F89D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C23C090C55ABDD4AD818C8B6 /* Pods-CIAB FEBRABAN.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3QR56LUBZ;
+				INFOPLIST_FILE = "CIAB FEBRABAN/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.kesleyribeiro.CIAB-FEBRABAN";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CIAB FEBRABAN/Utils/CIAB FEBRABAN-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA44E6D320CCB8120023F89D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BF9D773EC9EFB7D71412C07 /* Pods-CIAB FEBRABAN.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3QR56LUBZ;
+				INFOPLIST_FILE = "CIAB FEBRABAN/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.kesleyribeiro.CIAB-FEBRABAN";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CIAB FEBRABAN/Utils/CIAB FEBRABAN-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA44E6B720CCB80F0023F89D /* Build configuration list for PBXProject "CIAB FEBRABAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA44E6CF20CCB8120023F89D /* Debug */,
+				FA44E6D020CCB8120023F89D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA44E6D120CCB8120023F89D /* Build configuration list for PBXNativeTarget "CIAB FEBRABAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA44E6D220CCB8120023F89D /* Debug */,
+				FA44E6D320CCB8120023F89D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA44E6C620CCB8100023F89D /* CIAB_FEBRABAN.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA44E6C720CCB8100023F89D /* CIAB_FEBRABAN.xcdatamodel */,
+			);
+			currentVersion = FA44E6C720CCB8100023F89D /* CIAB_FEBRABAN.xcdatamodel */;
+			path = CIAB_FEBRABAN.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA44E6B420CCB80F0023F89D /* Project object */;
+}

@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
+  - SwiftMessages (4.0.0)
+  - YBAlertController (0.1.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - SwiftMessages
+  - YBAlertController
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - SwiftMessages
+    - YBAlertController
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  SwiftMessages: cd565e0e7d095584be1770c012c6b5be4183b5ee
+  YBAlertController: 68e8874813d1d9a5c76d72e5bb927e18f2d1afb8
+
+PODFILE CHECKSUM: dd5547fae194590febe6592cec4ab73a170e8060
+
+COCOAPODS: 1.5.2
